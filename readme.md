@@ -13,4 +13,4 @@
 
 **Versions:**
 *1.0.0*
-- Initial project structure 
+- Initial project structure     – Added index.html  
