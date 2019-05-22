@@ -1,8 +1,9 @@
 # WEB Project 2019 Semester B - BGU
 **Author: Iftach Rosenberg**
+
 **Repository:
-[http://github.com/iftachr/web](http://github.com/iftachr/web)*
-*
+[http://github.com/iftachr/web](http://github.com/iftachr/web)**
+
 **Version: 1.0**
 ## Project subject
 אתר השכרת תחפושות. כל הכנסות האתר ילכו לתרומות.
