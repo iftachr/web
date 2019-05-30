@@ -5,3 +5,15 @@ body{
     background-image: url("https://water123.com/skin/frontend/default/blue/css/img/bg-6.jpg");
     font-family: Calibri;
 }
+ header{
+     background-image: url("https://water123.com/skin/frontend/default/blue/css/img/bg-4.jpg") ;
+ 
+    height: 150px;
+    
+ }
+ 
+ .search{
+     position: relative;
+     bottom: -85px;
+     left: -10px;
+ }

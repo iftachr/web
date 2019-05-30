@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>התחברות</title>
-    <link rel="stylesheet" href="../total.css">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../../css/total.css">
 </head>
+<header>
+    <div>
+        <nav>
+            <ul dir="rtl">
+                <a id="homepage-link" href="../../index.html">דף הבית</a>&nbsp;&nbsp;&nbsp;
+                <a id="catalog-page-link" href="../catalog/catalog.html">קטלוג</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a id="login-page-link" href="../login/login.html">כניסה</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a id="about-page-link" href="file:///C:/wamp/www/web/pages/about/about.html">אודות</a>
+            </ul>
+        </nav>
+    </div>
+    <form method="GET" action="" class="search">
+        <label for="search-field"></label><input id="search-field" type="text" name="חיפוש" placeholder="חיפוש">
+        <input type="submit" value="חפש">
+    </form>
+</header>
 <body dir="rtl">
-    <form method="get" action="">
+    <form method="get" action="" id="formLogin">
           <input type="text" name="name" placeholder="שם משתמש"><br>
           <input type=int name="password" placeholder="סיסמה"><br>
         <input type="submit" value="התחבר" id="push" >
