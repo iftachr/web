@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #28afe8;
+        }
+    </style>
+    <link rel="stylesheet" href="../total.css">
+    <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <ul>
+            <li><a  href="#home">Home</a></li>
+            <li><a href="#Catalog">Catalog</a> </li>
+            <li><a href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#about">About</a></li>
+            
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button class="login" type="submit">Login</button>
+                </form>
+            </div>
+        </ul>
+    </div>
+    <h1 class="h1">
+        Photo Op
+        <hr class="h1"/>
+    </h1>
+    <form method="GET" action="" class="search">
+        <label for="search-field"></label><input id="search-field" type="text" name="Search" placeholder="Search">
+        <input type="submit" value="Search" class="search">
+    </form>
+</header>
+<main>
+<p class="prodName">
+    Digital Single Lense Reflex
+</p>
+<div>
+    <img class="images" url
+         src="https://img.staticbg.com/thumb/large/upload/SKU030071/20120418135409255.JPG"
+         id="camera2"
+         width="600" height="500" alt="DSLR Camera">
+</div>
+<h2 class="h2">
+    Description:
+</h2>
+<p class="desc">
+    This is the best camera in the world! you should buy it right now.
+    <br>
+    Please notice that this is the digital type of a camera.
+    <br>
+    Brief learning beforehand is recommended.
+</p>
+<p>
+    <button class="buy">
+        BUY NOW
+    </button>
+</p>
+</main>
+<footer>
+    <div class="footer">
+        <a href="Contact.html">Contact</a>
+    </div>
+</footer>
+</body>
+</html>

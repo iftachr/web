@@ -82,3 +82,8 @@ body {
     text-decoration-line: none;
     text-decoration: none;
 }
+
+.h1 {
+    text-align: center;
+    color: whitesmoke;
+}

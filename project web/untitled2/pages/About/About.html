@@ -41,28 +41,29 @@
 </head>
 <body>
 
-<div class="topnav">
-    <ul>
-        <li><a  href="#home">Home</a></li>
-        <li><a href="#Catalog">Catalog</a> </li>
-        <li><a href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="active" href="#about">About</a></li>
-        
-        <div class="login-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Username" name="username">
-                <input type="text" placeholder="Password" name="psw">
-                <button class="login" type="submit">Login</button>
-            </form>
-        </div>
-    </ul>
-</div>
+
 
 <header>
-    <h1 id="h1">
+    <div class="topnav">
+        <ul>
+            <li><a  href="#home">Home</a></li>
+            <li><a href="#Catalog">Catalog</a> </li>
+            <li><a href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#about">About</a></li>
+            
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button class="login" type="submit">Login</button>
+                </form>
+            </div>
+        </ul>
+    </div>
+    <h1 class="h1">
         Photo Op
-        <hr id="hr1"/>
+        <hr class="h1"/>
     </h1>
     <form method="GET" action="" class="search">
         <label for="search-field"></label><input id="search-field" type="text" name="Search" placeholder="Search">

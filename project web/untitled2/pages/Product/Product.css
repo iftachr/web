@@ -1,0 +1,49 @@
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+}
+
+.prodName{
+    color: #ec9321 ;
+    position: relative;
+    left: 34%;
+    font-size: 30px;
+}
+
+.h2{
+    color: whitesmoke ;
+    position: relative;
+    left: 7%;
+    font-size: 25px;
+}
+
+.desc{
+    color: whitesmoke ;
+    position: relative;
+    left: 15%;
+    font-size: 20px;
+}
+
+.buy {
+    text-decoration-line: none;
+    font-family: Tahoma;
+    color: var(--btn-colorbf);
+    border: 2px solid var(--btn-borderbf);
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: azure;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    left: 45%;
+}
+.buy:hover {
+    color: var(--btn-coloraft);
+    border: 2px solid  #ec9321;
+    transition: all 0.5s linear 0.1s;
+    background-color:  #ec9321;
+}
