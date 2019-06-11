@@ -1,0 +1,84 @@
+body {
+    background-color: #232a40;
+    font-family: verdana;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+:root {
+    --btn-colorbf: black;
+    --btn-coloraft: white;
+    --btn-borderbf: #4caf50;
+    --btn-borderaft: #a52a2a;
+}
+
+.btn {
+    text-decoration-line: none;
+    font-family: Tahoma;
+    color: var(--btn-colorbf);
+    border: 2px solid var(--btn-borderbf);
+    border-radius: 3px;
+    padding: 15px 20px;
+    background-color: azure;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+ .topnav .login-container{
+    float: right;
+    border-radius: 3px;
+    color: var(--btn-borderbf);
+}
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 150px;
+}
+
+.topnav .login-container button {
+    font-family: Verdana;
+    border-radius: 5px;
+    float: right;
+    padding: 8px;
+    margin-top: 6px;
+    margin-right: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search{
+    font-family: Verdana;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 6px;
+    margin-right: 5px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+    background: #ccc;
+}
+
+.btn:hover {
+    color: var(--btn-coloraft);
+    border: 2px solid var(--btn-borderaft);
+    transition: all 0.5s linear 0.1s;
+    background-color: var(--btn-borderaft);
+}
+
+.footer{
+    background-color: grey;
+    color: whitesmoke;
+    text-decoration-color: whitesmoke;
+    text-decoration-line: none;
+    text-decoration: none;
+}

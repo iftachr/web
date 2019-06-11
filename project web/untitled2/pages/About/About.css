@@ -1,0 +1,24 @@
+
+#h1 {
+    text-align: center;
+    
+}
+
+#hr1 {
+    color: whitesmoke;
+    
+}
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.images1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
+}
