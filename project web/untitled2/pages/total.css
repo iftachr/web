@@ -76,16 +76,19 @@ body {
     text-decoration-color: whitesmoke;
     text-decoration-line: none;
     text-decoration: none;
-    position: static;
-    bottom: 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .h1 {
     text-align: center;
-    
     color: whitesmoke;
-    position: relative;
-    top: 50px;
+    position:relative;
+    top: 80px;
+    left:16%;
 }
 
 .login-container {
@@ -104,3 +107,9 @@ body {
     z-index: 3;
     display: block;
 }
+
+.Breadcrumbs{
+    position: relative;
+    top: 5px;
+}
+
