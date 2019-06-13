@@ -1,5 +1,5 @@
 body {
-    background-color: #232a40;
+    background-image: url("http://paperlief.com/images/camera-lens-logo-wallpaper-3.jpg") ;
     font-family: verdana;
     font-size: 20px;
     color: whitesmoke;
@@ -26,12 +26,6 @@ body {
     font-size: 16px;
 }
 
-
- .topnav .login-container{
-    float: right;
-    border-radius: 3px;
-    color: var(--btn-borderbf);
-}
 .topnav input[type=text] {
     padding: 6px;
     margin-top: 8px;
@@ -40,12 +34,12 @@ body {
     width: 150px;
 }
 
-.topnav .login-container button {
+ .login-container button {
     font-family: Verdana;
     border-radius: 5px;
     float: right;
     padding: 8px;
-    margin-top: 6px;
+    margin-top: -4px;
     margin-right: 5px;
     background: #ddd;
     font-size: 17px;
@@ -62,9 +56,10 @@ body {
     font-size: 17px;
     border: none;
     cursor: pointer;
+    right: 5px;
 }
 
-.topnav .login-container button:hover {
+ .login-container button:hover {
     background: #ccc;
 }
 
@@ -81,9 +76,40 @@ body {
     text-decoration-color: whitesmoke;
     text-decoration-line: none;
     text-decoration: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .h1 {
     text-align: center;
     color: whitesmoke;
+    position:relative;
+    top: 80px;
+    left:16%;
+}
+
+.login-container {
+    position: relative;
+    float: right;
+    top: -10px;
+    z-index: 3;
+    display: block;
+    border-radius: 3px;
+    color: var(--btn-borderbf);
+}
+
+.topnav {
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    display: block;
+}
+
+.Breadcrumbs{
+    position: relative;
+    top: 5px;
+    text-decoration: none;
 }
