@@ -173,5 +173,33 @@ img {
     color: whitesmoke;
     position:relative;
     font-size: 30px;
-    font-family: lobster;
+    font-family: dancing script;
+}
+
+.login-container-home{
+    position: relative;
+    float: right;
+    top: 17px;
+    right: 7px;
+    z-index: 3;
+    display: block;
+    border-radius: 3px;
+    color: var(--btn-borderbf);
+}
+
+.login-container-home button {
+    font-family: Verdana;
+    border-radius: 5px;
+    float: right;
+    padding: 8px;
+    margin-top: -4px;
+    margin-right: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container-home button:hover {
+    background: #ccc;
 }
