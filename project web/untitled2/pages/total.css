@@ -114,7 +114,38 @@ body {
     text-decoration: none;
 }
 
-
 .active {
     background-color: #28afe8;
+}
+
+.p-t-1 {
+    background-color: black;
+}
+
+
+.fa-facebook-official{
+    color: #28afe8;
+    padding: 10px;
+}
+
+.fa-twitter{
+    color: #28afe8;
+    padding: 10px;
+}
+
+.fa-flickr{
+    color: #28afe8;
+    padding: 10px;
+}
+
+.fa-linkedin{
+    color: #28afe8;
+    padding: 10px;
+}
+
+.nav-item{
+    color: #28afe8;
+    text-decoration: none;
+    font-family: Verdana;
+    padding: 10px;
 }
