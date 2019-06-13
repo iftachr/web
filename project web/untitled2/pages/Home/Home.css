@@ -159,3 +159,19 @@ img {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
+.quote{
+    text-align: center;
+    color: whitesmoke;
+    position:relative;
+    font-size: 50px;
+    font-family: rakkas;
+}
+
+.source{
+    text-align: center;
+    color: whitesmoke;
+    position:relative;
+    font-size: 30px;
+    font-family: lobster;
+}
