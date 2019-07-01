@@ -56,16 +56,16 @@
         
         </ul>
     
-        <form method="GET" action="" class="search">
-            <label for="search-field"></label><input id="search-field" type="text" name="Search" placeholder="Search">
+        <form method="post" action="" class="search" name="searchForm" onsubmit="return validateFormSearch()">
+            <label for="search-field"></label><input id="search-field" type="text"  placeholder="Search" name="searchInput">
             <input type="submit" value="Search" class="search">
         </form>
         
     </div>
     <div class="login-container">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Username" name="username" required>
-            <input type="password" placeholder="Password" name="psw" required>
+        <form name="mysignin" action="/action_page.php" onsubmit="return validateFormSignin()" method="post">
+            <input type="text" placeholder="Username" name="username" required >
+            <input type="password" placeholder="Password" name="psw" required >
             <button class="login" type="submit">Login</button>
         </form>
     </div>
@@ -188,6 +188,7 @@
     
     </div>
 </footer>
+<script src="../total.js"></script>
 </body>
 
 </html>

@@ -81,8 +81,8 @@
             
         </ul>
         
-        <form method="GET" action="" class="search">
-            <label for="search-field"></label><input id="search-field" type="text" name="Search" placeholder="Search">
+        <form method="post" action="" class="search" name="searchForm" onsubmit="return validateFormSearch()">
+            <label for="search-field"></label><input id="search-field" type="text"  placeholder="Search" name="searchInput">
             <input type="submit" value="Search" class="search">
         </form>
     </div>
