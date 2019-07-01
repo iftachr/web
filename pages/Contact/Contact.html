@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Photo Op" content="Photography">
+    <meta name="keywords" content="DSLR,Camera,Photo,Painting with light">
+    <meta name="author" content="Amit Nachmias">
+    <title>Contact</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #28afe8;
+        }
+    </style>
+    <link rel="stylesheet" href="../total.css">
+</head>
+<body>
+<div class="topnav">
+    <ul>
+        <li><a  href="#home">Home</a></li>
+        <li><a href="#Catalog">Catalog</a> </li>
+        <li><a href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
+        <li><a class="active" href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        
+        <div class="login-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Password" name="psw">
+                <button class="login" type="submit">Login</button>
+            </form>
+        </div>
+    </ul>
+</div>
+</body>
+</html>

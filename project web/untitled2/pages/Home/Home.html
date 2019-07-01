@@ -11,11 +11,10 @@
     <meta charset="UTF-8">
     <meta name="Photo Op" content="Photography">
     <meta name="keywords" content="DSLR,Camera,Photo,Painting with light">
-    <meta name="author" content="Amit Nachmias">
+    <meta name="author" content="Amit Nachmias, Iftach Rosenberg, Yarden Rosner, Rom Lapid">
     <title>Home-Photo Op</title>
-    <link rel="stylesheet" href="../total.css">
     <link rel="stylesheet" href="Home.css">
-    
+    <link rel="stylesheet" href="../total.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home-Photo Op</title>
     
@@ -65,8 +64,9 @@
         
       
     </style>
-  
     
+
+
 </head>
 <body>
 <header>
@@ -80,11 +80,17 @@
             <li><a target="_blank" href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
             
         </ul>
+        
+        <form method="GET" action="" class="search">
+            <label for="search-field"></label><input id="search-field" type="text" name="Search" placeholder="Search">
+            <input type="submit" value="Search" class="search">
+        </form>
     </div>
+    
     <div class="login-container-home">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Username" name="username" required>
-            <input type="password" placeholder="Password" name="psw" required>
+        <form name="mysignin" action="/action_page.php" onsubmit="return validateFormSignin()" method="post">
+            <input type="text" placeholder="Username" name="username" required >
+            <input type="password" placeholder="Password" name="psw" required >
             <button class="login" type="submit">Login</button>
         </form>
     </div>
@@ -93,10 +99,7 @@
     </div>
     <br><br><br>
     <hr>
-    <form method="GET" action="" class="search">
-        <label for="search-field"></label><input id="search-field" type="text" name="Search" placeholder="Search">
-        <input type="submit" value="Search" class="search">
-    </form>
+    
     <br>
 </header>
 <main>
@@ -243,5 +246,6 @@
 
 </body>
 <script src="Home.js"></script>
+<script src="../total.js"></script>
 </html>
 

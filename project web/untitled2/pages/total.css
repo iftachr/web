@@ -1,5 +1,7 @@
 body {
     background-image: url("http://paperlief.com/images/camera-lens-logo-wallpaper-3.jpg") ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
     font-family: verdana;
     font-size: 20px;
     color: whitesmoke;
