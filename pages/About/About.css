@@ -1,19 +1,15 @@
 
-#h1 {
-    text-align: center;
-    
+body{
+    background-image: url("https://wallpapercave.com/wp/wp1912048.jpg");
 }
 
-#hr1 {
-    color: whitesmoke;
-    
-}
 
 .images {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    
 }
 .images1{
     display: block;
@@ -21,4 +17,36 @@
     margin-right: auto;
     height: 400px;
     width: 300px;
+    border-radius: 10px;
+}
+#camera2{
+    width: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: #111111;
 }

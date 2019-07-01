@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    
     <meta charset="UTF-8">
     <meta name="Photo Op" content="Photography">
     <meta name="keywords" content="DSLR,Camera,Photo,Painting with light">
     <meta name="author" content="Amit Nachmias">
-    <title> Photo Op</title>
+    <title> About</title>
     <style>
         ul {
             list-style-type: none;
@@ -32,56 +38,85 @@
             background-color: #111;
         }
         
-        .active {
-            background-color: #28afe8;
-        }
     </style>
     <link rel="stylesheet" href="../total.css">
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
 
-<div class="topnav">
-    <ul>
-        <li><a  href="#home">Home</a></li>
-        <li><a href="#Catalog">Catalog</a> </li>
-        <li><a href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="active" href="#about">About</a></li>
-        
-        <div class="login-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Username" name="username">
-                <input type="text" placeholder="Password" name="psw">
-                <button class="login" type="submit">Login</button>
-            </form>
-        </div>
-    </ul>
-</div>
 
 <header>
-    <h1 id="h1">
+    <div class="topnav">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Catalog/Catalog.html">Catalog</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+            <li><a class="active" href="../About/About.html">About</a></li>
+            <li><a target="_blank" href="http://www.canonoutsideofauto.ca/play/">Exposure Meter Simulator</a></li>
+        
+        </ul>
+    
+        <form method="post" action="" class="search" name="searchForm" onsubmit="return validateFormSearch()">
+            <label for="search-field"></label><input id="search-field" type="text"  placeholder="Search" name="searchInput">
+            <input type="submit" value="Search" class="search">
+        </form>
+        
+    </div>
+    <div class="login-container">
+        <form name="mysignin" action="/action_page.php" onsubmit="return validateFormSignin()" method="post">
+            <input type="text" placeholder="Username" name="username" required >
+            <input type="password" placeholder="Password" name="psw" required >
+            <button class="login" type="submit">Login</button>
+        </form>
+    </div>
+    
+    
+    <h1 class="h1">
         Photo Op
-        <hr id="hr1"/>
     </h1>
+    <br><br><br>
+    <hr>
+    
+    <p>
+    <div class="Breadcrumbs">
+        <a href="../Home/Home.html ">Home</a>
+        »
+        <a href="../About/About.html ">About</a>
+    </div>
+    </p>
 </header>
 <main>
+    <br>
     <div>
+        We, the "Photo Op" crew, want you, the viewers of this site, who may or may not have a major experience with
+        photography, <br/>
+        to learn something new about photography from visiting our website. <br/>
+        Furthermore, we offer a variety of products for photographers. <br/>
+        We hope you will enjoy your stay here.<br/>
+        <br/>
+        <h2> About Photography:</h2>
+        <br/>
+        <br/>
         Photography is the art, application and practice of creating durable images by recording light or other
         electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a
         light-sensitive material such as photographic film.
-        <br/> It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as
+        <br/>
+        It is employed in many fields of science, manufacturing, and business, as well as
         its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.
     </div>
-    <div>
-        <img url class="images"
-             src="https://upload.wikimedia.org/wikipedia/commons/5/5c/View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg"
-             id="first photo" width="800" height="600" alt="View from the Window at Le Gras">
-        <br/>
-        This is the first photo ever taken (Paris, 1826)
-        <br/>
+    <br/>
+        <div class="dropdown">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg" alt="SLR" width="200" height="150">
+            <div class="dropdown-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg" alt="SLR" width="400" height="300">
+                <div class="desc">This is the first photo ever taken
+                    <br>
+                    <hr>
+                    Paris, 1826</div>
+            </div>
         <br/>
     </div>
+    <br>
     <div>
         The camera is the image-forming device, and a photographic plate, photographic film or a silicon electronic
         image sensor is the capture medium.
@@ -89,6 +124,7 @@
         The respective recording medium can be the plate or film itself, or a digital magnetic or electronic memory.
         <br/>
     </div>
+    <br/>
     <div>
         <img class="images1" url
              src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Large_format_camera_lens.jpg" id="camera1"
@@ -97,67 +133,62 @@
     <br/>
     <div>
         Photographers control the camera and lens to "expose" the light recording material to the required
-        amount of light to form a "latent image" (on plate or film) or RAW file (in digital cameras) which,
-        after appropriate processing, is converted to a usable image.
+        amount of light to form a "latent image".
         <br/>
-        Digital cameras use an electronic image sensor based on light-sensitive electronics such as
-        charge-coupled device (CCD) or complementary metal-oxide-semiconductor (CMOS) technology.
-        <br/>
-        <div>
-            <img class="images" url
-                 src="http://www.gadgetreview.com/wp-content/uploads/2015/12/Nikon-D7200-What-Is-a-DSLR-Camera.jpg"
-                 id="camera2"
-                 width="600" height="500" alt="DSLR Camera">
-        </div>
-        <br/>
-        The resulting digital image is stored electronically, but can be reproduced on a paper.
-        <br/>
-        The camera (or 'camera obscura') is a dark room or chamber from which, as far as possible, all light
+        The camera (or <b>'Camera Obscura'</b> ) is a dark room or chamber from which, as far as possible, all light
         is
         excluded except the light that forms the image.
         <br/>
-        It was discovered and used in the 16th century by painters. The subject being photographed, however,
-        must be illuminated.
+        <br/>
+        <div class="dropdown">
+            <img src="https://www.thedarkroom.it/inthedarkroom/wp-content/uploads/2014/10/Old-Camera-Obscura-Draw-620x413.jpg" alt="SLR" width="200" height="150">
+            <div class="dropdown-content">
+                <img src="https://www.thedarkroom.it/inthedarkroom/wp-content/uploads/2014/10/Old-Camera-Obscura-Draw-620x413.jpg" alt="SLR" width="600" height="450">
+                <div class="desc">"Camera Obscura" - was discovered and used in the 16th century by painters. The subject being photographed, however,
+                    must be illuminated.
+                    <br>
+                    <hr>
+                    Large portable camera obscura, 1646</div>
+            </div>
+            <br/>
+        </div>
+        <br/>
+        
         <br/>
         Cameras can range from small to very large, a whole room that is kept dark while the object to be
         photographed is in another room where it is properly illuminated.
         <br/>
-        This was common for reproduction photography of flat copy when large film negatives were used.
         <br/>
-        As soon as photographic materials became "fast" (sensitive) enough for taking candid or
-        surreptitious
-        pictures, small "detective" cameras were made, some actually disguised as a book or handbag or
-        pocket
-        watch (the Ticka camera) or even worn hidden behind an Ascot necktie with a tie pin that was really
-        the
-        lens.
-        <br/>
-        The movie camera is a type of photographic camera which takes a rapid sequence of photographs on
-        recording medium.
-        <br/>
-        In contrast to a still camera, which captures a single snapshot at a time, the movie camera takes a
-        series of images, each called a "frame".
-        <br/>
-        This is accomplished through an intermittent mechanism. The frames are later played back in a movie
-        projector at a specific speed, called the "frame rate" (number of frames per second).
-        <br/>
-        While viewing, a person's eyes and brain merge the separate pictures to create the illusion of
-        motion.
-        <br/>
-        <br/>
-        Want to make your own Camera-Obscura?
+        <b>Want to make your own Camera-Obscura?</b>
         <br/>
         <br/>
         <div>
-            <a class="btn" href="https://www.youtube.com/watch?v=5I-bOBsQT74">Click Here!</a>
+            <a class="btn" target="_blank" href="https://www.youtube.com/watch?v=5I-bOBsQT74">Click Here!</a>
         </div>
-        <br/>
+        <br><br>.
     </div>
 </main>
 
-<footer>
-
+<footer class="footer p-t-1">
+    <div class="container">
+        <div class="pull-right">
+            <nav class="navbar" style="background:transparent; color: black;">
+                <nav class="nav navbar-nav pull-xs-left">
+                    <a class="nav-item nav-link" href="../Home/Home.html">Home</a>
+                    <a class="nav-item nav-link" href="../About/About.html">About</a>
+                    <a class="nav-item nav-link" href="../Contact/Contact.html">Contact Us</a>
+                </nav>
+            </nav>
+        </div>
+        
+        <a target="_blank" href="https://www.facebook.com/amitnachmias"><i class="fa fa-facebook-official fa-2x"></i></a>
+        <a target="_blank" href="https://mobile.twitter.com/amitnachmias"><i class="fa fa-twitter fa-2x"></i></a>
+        <a target="_blank" href="https://www.flickr.com/"><i class="fa fa-flickr fa-2x"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a>
+    
+    </div>
 </footer>
+<script src="../total.js"></script>
 </body>
 
 </html>
