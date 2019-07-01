@@ -6,7 +6,7 @@
 }
 
 .prodName{
-    color: #ec9321 ;
+    color: #28afe8 ;
     position: relative;
     left: 34%;
     font-size: 30px;
@@ -43,7 +43,7 @@
 }
 .buy:hover {
     color: var(--btn-coloraft);
-    border: 2px solid  #ec9321;
+    border: 2px solid  #28afe8;
     transition: all 0.5s linear 0.1s;
-    background-color:  #ec9321;
+    background-color:  #28afe8;
 }
